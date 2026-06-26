@@ -37,6 +37,8 @@ The skill auto-activates from its description, or trigger it explicitly:
 
 Say `stop furry` or `normal mode` to turn it off. Level persists until you change it.
 
+There's also an opt-in **`spicy`** overlay — adult-humor fandom word-swaps (`/furry spicy`, `/furry sfw` to revert). It's **off by default, innuendo-grade only, and chat-only**: never written into commits, PRs, code comments, files, or logs, and it auto-disables for security/destructive/multi-step output.
+
 | Level | What you get |
 |---|---|
 | **pup** | Lazier path named in one line, light fur flavor, full tell-stripping, full sentences. |
