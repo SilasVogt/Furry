@@ -1,0 +1,19 @@
+furry
+Copyright (c) 2026 Silas Vogt
+Licensed under the MIT License (see LICENSE).
+
+This skill builds on ideas and, in the engineering layer, closely adapted
+wording from two prior MIT-licensed skills. Both are gratefully credited:
+
+- Ponytail — Dietrich Gebert — https://github.com/DietrichGebert/ponytail
+  MIT License. The "build lazy" ladder (YAGNI, reuse, stdlib/native first,
+  one line before fifty, root-cause-not-symptom) is adapted from Ponytail's
+  SKILL.md.
+
+- caveman — Julius Brussee — https://github.com/JuliusBrussee/caveman
+  MIT License. The "talk short" approach (drop articles/filler/pleasantries,
+  preserve code/identifiers verbatim, intensity levels) is inspired by
+  caveman.
+
+MIT-licensed material may be combined and redistributed under MIT; this NOTICE
+preserves attribution for the adapted portions as MIT requires.
