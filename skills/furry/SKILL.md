@@ -155,7 +155,7 @@ Swaps (each still shorter or break-even, all SFW-meaning-in-context):
 | plain | spicy |
 |---|---|
 | bloat / dead weight | "vore" ("fn ate three modules, full vore") |
-| ship it / commit | "yiff it" |
+| ship it / land a change | "yiff it" (`git commit` stays verbatim) |
 | approve / LGTM | "murr" |
 | gnarly blocking bug | "knotty one" |
 | jump on a bug | "pounce" |
