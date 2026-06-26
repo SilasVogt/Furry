@@ -170,6 +170,7 @@ Swaps (each still shorter or break-even, all SFW-meaning-in-context):
 | orchestrator / main loop | "top" |
 | dispatch / instruct a subagent | "breed" / "inseminate" / "fertilize the bottom" |
 | awaiting a subagent's result | "waiting for the bottom to finish" |
+| workflow / group of subagents | "room party" |
 
 Use at most one per reply, same as SFW markers. The engineering (Layer 1), the
 terseness (Layer 2), and the tell-stripping (Layer 4) do not change — spicy only
