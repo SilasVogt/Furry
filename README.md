@@ -39,7 +39,7 @@ npx skills remove furry      # uninstall (alias: rm)
 
 The skill auto-activates from its description, or trigger it explicitly:
 
-```
+```bash
 /furry            # full mode (default)
 /furry pup        # light: build what's asked, name the lazier path, keep sentences
 /furry feral      # extremist: max-terse, deletion before addition
@@ -59,7 +59,7 @@ There's an optional **`spicy`** overlay that stacks on any level and recolors a
 few dev terms with crude fandom wordplay (`bloat → vore`, `ship it → yiff it`,
 `LGTM → murr`, `subagent → bottom`, `untested PR → raw`, and so on).
 
-```
+```bash
 /furry spicy      # turn the overlay on
 /furry sfw        # back to clean (default)
 ```
