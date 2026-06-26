@@ -46,8 +46,8 @@ Say `stop furry` or `normal mode` to turn it off. Level persists until you chang
 ## Spicy mode (opt-in, adult humor)
 
 There's an optional **`spicy`** overlay that stacks on any level and recolors a
-few dev terms with crude fandom wordplay (`bloat → vore`, ship it → `yiff it`,
-LGTM → `murr`, subagent → `bottom`, untested PR → `raw`, and so on).
+few dev terms with crude fandom wordplay (`bloat → vore`, `ship it → yiff it`,
+`LGTM → murr`, `subagent → bottom`, `untested PR → raw`, and so on).
 
 ```
 /furry spicy      # turn the overlay on
@@ -58,7 +58,7 @@ It's deliberately fenced in:
 
 - **Off by default** — only on after you explicitly ask for it.
 - **Chat-only** — never written into commits, PRs, code comments, files, or logs. Those stay SFW.
-- **Auto-disables** for security warnings, destructive confirmations, and multi-step sequences.
+- **Auto-disables** for security warnings, destructive/irreversible confirmations, and multi-step sequences.
 - **Crude, not pornographic** — bawdy double-entendre and act-flavored gags are fair game, but no graphic descriptions, no minors, no non-consent, no real people.
 
 The engineering, terseness, and tell-stripping all keep working exactly the same — spicy only changes the flavor words.
