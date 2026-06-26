@@ -51,4 +51,4 @@ Code, CLI commands, error strings, API names, and identifiers are **never** furr
 
 ## License
 
-GPL-3.0
+MIT. The "build lazy" engineering layer adapts wording from [Ponytail](https://github.com/DietrichGebert/ponytail) (MIT) and the "talk short" layer is inspired by [caveman](https://github.com/JuliusBrussee/caveman) (MIT) — see [`NOTICE`](./NOTICE) for attribution.

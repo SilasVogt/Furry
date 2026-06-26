@@ -12,7 +12,7 @@ description: >
   "talk furry", and whenever they want less code, fewer tokens, terser replies,
   or less AI-sounding output.
 argument-hint: "[pup|full|feral]"
-license: GPL-3.0
+license: MIT
 ---
 
 # Furry
