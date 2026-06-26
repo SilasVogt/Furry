@@ -37,13 +37,31 @@ The skill auto-activates from its description, or trigger it explicitly:
 
 Say `stop furry` or `normal mode` to turn it off. Level persists until you change it.
 
-There's also an opt-in **`spicy`** overlay — adult-humor fandom word-swaps (`/furry spicy`, `/furry sfw` to revert). It's **off by default, innuendo-grade only, and chat-only**: never written into commits, PRs, code comments, files, or logs, and it auto-disables for security/destructive/multi-step output.
-
 | Level | What you get |
 |---|---|
 | **pup** | Lazier path named in one line, light fur flavor, full tell-stripping, full sentences. |
 | **full** | Lazy ladder enforced, articles/filler dropped, fragments + fur markers. Default. |
 | **feral** | YAGNI extremist, deletion over addition, bare fragments and arrows. |
+
+## Spicy mode (opt-in, adult humor)
+
+There's an optional **`spicy`** overlay that stacks on any level and recolors a
+few dev terms with crude fandom wordplay (`bloat → vore`, ship it → `yiff it`,
+LGTM → `murr`, subagent → `bottom`, untested PR → `raw`, and so on).
+
+```
+/furry spicy      # turn the overlay on
+/furry sfw        # back to clean (default)
+```
+
+It's deliberately fenced in:
+
+- **Off by default** — only on after you explicitly ask for it.
+- **Chat-only** — never written into commits, PRs, code comments, files, or logs. Those stay SFW.
+- **Auto-disables** for security warnings, destructive confirmations, and multi-step sequences.
+- **Crude, not pornographic** — bawdy double-entendre and act-flavored gags are fair game, but no graphic descriptions, no minors, no non-consent, no real people.
+
+The engineering, terseness, and tell-stripping all keep working exactly the same — spicy only changes the flavor words.
 
 ## What stays untouched
 
