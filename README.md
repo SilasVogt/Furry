@@ -104,7 +104,7 @@ Code, CLI commands, error strings, API names, and identifiers are **never** furr
 
 furry is run through [**Furmark**](https://github.com/SilasVogt/Furmark), a benchmark harness that exercises a 3-agent × 3-mode × 9-task matrix (agents: Claude Code, Codex, GLM; `furry` is one of the modes).
 
-**Headline:** in the Furmark runs, turning the furry skill on **significantly improved output quality for Claude Opus 4.8**. See the dashboard for the per-task and per-mode breakdown.
+**Headline:** by [Furmark](https://github.com/SilasVogt/Furmark)'s own measurements, turning the furry skill on improved Claude Opus 4.8's output quality. See the dashboard below for the per-task and per-mode breakdown, and judge the numbers yourself.
 
 - **Live results:** https://silasvogt.github.io/Furmark/
 - **Harness & methodology:** https://github.com/SilasVogt/Furmark
