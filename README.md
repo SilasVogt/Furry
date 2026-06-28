@@ -79,6 +79,15 @@ Code, CLI commands, error strings, API names, and identifiers are **never** furr
 
 > furry makes the mouth smaller and the diff smaller. it does not make the brain smaller. :3
 
+## Benchmarks
+
+furry is run through [**Furmark**](https://github.com/SilasVogt/Furmark), a benchmark harness that exercises a 3-agent × 3-mode × 9-task matrix (agents: Claude Code, Codex, GLM; `furry` is one of the modes).
+
+- **Live results:** https://silasvogt.github.io/Furmark/
+- **Harness & methodology:** https://github.com/SilasVogt/Furmark
+
+The dashboard has the per-task and per-mode numbers.
+
 ## Changelog
 
 `npx skills update` always pulls the latest from `main`, so "version" here is just a human-readable marker for what changed.
