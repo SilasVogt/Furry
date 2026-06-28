@@ -10,7 +10,7 @@ An agent skill that does three things at once:
 
 Net effect: better engineering, fewer tokens, output that doesn't read like it came out of a model. rawr.
 
-**Version 0.3.1** — see the [Changelog](#changelog).
+**Version 0.4.0** — see the [Changelog](#changelog).
 
 ## Install
 
@@ -73,6 +73,27 @@ It's deliberately fenced in:
 
 The engineering, terseness, and tell-stripping all keep working exactly the same — spicy only changes the flavor words.
 
+## Den mode (opt-in)
+
+By default the fur is chat-only and every artifact (commits, PRs, docs, comments) stays plain. **Den mode** moves the line from *artifact* to *audience*: fur is allowed in your own space — chat, your commit messages, your scratch notes, TODO comments in code you're hacking on — and only outward-facing text stays plain (PR/issue descriptions, review comments, messages to other agents or people).
+
+```bash
+/furry den        # fur in your own commits/notes too
+/furry noden      # back to chat-only fur (default)
+```
+
+`spicy` is still chat-only even in den (never in commits/code), and the safety rules still force plain language where they apply.
+
+## Make it always-on
+
+Don't want to type `/furry spicy` or `/furry den` every thread? The published skill keeps both **off by default** on purpose (safety, and it's everyone's default). For your *own* setup, make it sticky with a one-line standing instruction your agent reads each session — e.g. in Claude Code add to `~/.claude/CLAUDE.md`:
+
+```
+Always operate in /furry full + spicy + den mode.
+```
+
+That re-asserts the mode on every new thread without changing the public skill. (Other agents have an equivalent: a global rules file or a session-start instruction.)
+
 ## What stays untouched
 
 Code, CLI commands, error strings, API names, and identifiers are **never** furrified — always verbatim. The skill also drops the fur and talks plain for security warnings, destructive confirmations, and multi-step sequences where compression could cause a misread. It never simplifies away validation, error handling, security, or accessibility.
@@ -83,6 +104,8 @@ Code, CLI commands, error strings, API names, and identifiers are **never** furr
 
 furry is run through [**Furmark**](https://github.com/SilasVogt/Furmark), a benchmark harness that exercises a 3-agent × 3-mode × 9-task matrix (agents: Claude Code, Codex, GLM; `furry` is one of the modes).
 
+**Headline:** in the Furmark runs, turning the furry skill on **significantly improved output quality for Claude Opus 4.8**. See the dashboard for the per-task and per-mode breakdown.
+
 - **Live results:** https://silasvogt.github.io/Furmark/
 - **Harness & methodology:** https://github.com/SilasVogt/Furmark
 
@@ -92,6 +115,7 @@ The dashboard has the per-task and per-mode numbers.
 
 `npx skills update` always pulls the latest from `main`, so "version" here is just a human-readable marker for what changed.
 
+- **0.4.0** — Add **den mode** (`/furry den`): fur reaches into your own commits and notes, only outward-facing comms (PRs, external agents/people) stay plain; spicy stays chat-only regardless. Documented an always-on recipe (standing instruction in your own config) since the published skill keeps spicy/den off by default. Added the Furmark benchmark headline (Opus 4.8 output-quality gain).
 - **0.3.1** — Make the anti-AI-tell rules actually stick: front-loaded a "non-negotiables" block (no em-dashes, be short, don't write like a model) at the top and a pre-send self-check at the bottom, since rules buried mid-file got ignored. Also stripped the em-dashes out of the skill file itself so it stops normalizing them.
 - **0.3.0** — Dial up the flavor: full mode spreads fur through the whole reply (not one marker then plain), and the only density rule is now "spread flourishes out, never cluster them adjacent" (markers, faces, and spicy hits all stack as long as they're not touching). Spicy actively reaches for innuendo with a calibration example. Tuned after real Opus sessions read too restrained.
 - **0.2.0** — Split activation into quiet vs furry mode; full mode now reads furry on every reply; expanded fur vocab (species slang, body nouns, more emoticons); documented spicy mode with its own section; enriched the spicy table (musk, rut, knotted-up, macro/micro, pred/prey); banned em-dashes in output for real.
